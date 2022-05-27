@@ -28,6 +28,8 @@
     <!-- CSS WebSlides -->
     <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
 
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/style.css">
+
     <!-- FACEBOOK -->
     <meta property="og:url" content="http://your-url.com/"> <!-- YOUR URL -->
     <meta property="og:type" content="article">
@@ -86,6 +88,44 @@
           <h1>Este soy yo:</h1>
           <img src="static/images/yo.jpg" width="500" height="600">
         </section>
+        <section>
+          <h1>Y hice esto:</h1>
+          <p>Pero con las prisas no lo he implementado bien.</p>
+        </section>
+        <section>
+          <h1>Adivina el número secreto</h1>
+          <div id="codigo" class="flex wrap center">
+            <div class="w100 flex wrap">
+              <div class="w20">
+                <div class="cel flex">*</div>
+              </div>
+              <div class="w20">
+                <div class="cel flex">*</div>
+              </div>
+              <div class="w20">
+                <div class="cel flex">*</div>
+              </div>
+              <div class="w20">
+                <div class="cel flex">*</div>
+              </div>
+              <div class="w20">
+                <div class="cel flex">*</div>
+              </div>
+            </div>
+          </div>
+          <div class="w100 flex wrap center comprobar">
+            <label class="w90" for="numero">Escribe aquí un número</label><br>
+            <input class="w90" type="text" id="numero" name="numero" value="01234"><br>
+            <button class="w90" id="check" onclick="Comprobar()">Comprobar</button>
+
+          </div>
+          <div class="w100 info">
+            <p class="w90" id="info">Primer intento, suerte!</p>
+          </div>
+          <div id="Result" class="flex wrap center">
+
+          </div>
+        </section>
         
 
       </article>
@@ -106,6 +146,7 @@
     <script>
       window.ws = new WebSlides();
     </script>
+    <script src="static/js/script.js"></script>
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="static/js/svg-icons.js"></script>
